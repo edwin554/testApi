@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite name="Cucumber" time="6.746" tests="2" skipped="0" failures="2" errors="0">
+<testcase classname="datos de empleado" name="obtener datos de un empleado - Example #1.1" time="4.97">
+<failure type="java.lang.AssertionError" message="1 expectation failed.&#xa;Expected status code &lt;201> but was &lt;200>.&#xa;">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <200>.
+
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:395)
+	at StepDefinitions.GetEmpleadoStepDefinition.validoElCodigoDeStatus(GetEmpleadoStepDefinition.java:19)
+	at ✽.valido el codigo de status 201(file:///C:/Automatizacion/ReqRest/src/test/resources/features/GetEmpleado.feature:6)
+]]>
+</failure>
+<system-out><![CDATA[
+Given deseo obtener datos de un empleado con id.............................passed
+Then valido el codigo de status 201.........................................failed
+And Verifico ID.............................................................skipped
+And Verifico nombre.........................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="datos de empleado" name="obtener datos de un empleado - Example #1.2" time="1.185">
+<failure type="java.lang.AssertionError" message="1 expectation failed.&#xa;Expected status code &lt;201> but was &lt;200>.&#xa;">
+<![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <200>.
+
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:395)
+	at StepDefinitions.GetEmpleadoStepDefinition.validoElCodigoDeStatus(GetEmpleadoStepDefinition.java:19)
+	at ✽.valido el codigo de status 201(file:///C:/Automatizacion/ReqRest/src/test/resources/features/GetEmpleado.feature:6)
+]]>
+</failure>
+<system-out><![CDATA[
+Given deseo obtener datos de un empleado con id.............................passed
+Then valido el codigo de status 201.........................................failed
+And Verifico ID.............................................................skipped
+And Verifico nombre.........................................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
