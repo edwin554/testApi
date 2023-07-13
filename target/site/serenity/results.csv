@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"eliminar empleado","eliminar empleado exitosamente","SUCCESS","2023-07-13T12:09:06.400841-05:00[America/Bogota]","0.0","6.01"
+"obtener informacion de usuarios","obtenemos la informacion de los usuarios registrados","SUCCESS","2023-07-13T12:09:12.4441868-05:00[America/Bogota]","0.0","1.32"
+"datos de empleado","obtener datos de un empleado","SUCCESS","2023-07-13T12:09:13.7781475-05:00[America/Bogota]","0.0","0.87"
+"Crear usuarios","crear usuarios","SUCCESS","2023-07-13T12:09:14.6623602-05:00[America/Bogota]","0.0","0.86"
+"actualizar datos de empleados","Actualizar datos empleados","SUCCESS","2023-07-13T12:09:15.5364282-05:00[America/Bogota]","0.0","2.94"

@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"datos de empleado","obtener datos de un empleado","SUCCESS","2023-07-13T12:09:13.7781475-05:00[America/Bogota]","0.0","0.87"
+"Crear usuarios","crear usuarios","SUCCESS","2023-07-13T12:09:14.6623602-05:00[America/Bogota]","0.0","0.86"
+"actualizar datos de empleados","Actualizar datos empleados","SUCCESS","2023-07-13T12:09:15.5364282-05:00[America/Bogota]","0.0","2.94"

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="datos de empleado" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-07-13T17:09:13" hostname="EDWINCHAVARRO" time="0.887">
+  <properties/>
+  <testcase name="obtener datos de un empleado #1" classname="datos de empleado" time="0.452"/>
+  <testcase name="obtener datos de un empleado #2" classname="datos de empleado" time="0.435"/>
+  <system-out><![CDATA[
+@Apis
+Scenario Outline: obtener datos de un empleado    # src/test/resources/features/GetEmpleado.feature:12
+  Given deseo obtener datos de un empleado con id # StepDefinitions.GetEmpleadoStepDefinition.deseoObtenerDatosDeUnEmpleadoConId(io.cucumber.datatable.DataTable)
+    | Id | FirstName |
+    | 1  | George    |
+  Then valido el codigo de status 200             # StepDefinitions.GetEmpleadoStepDefinition.validoElCodigoDeStatus(java.lang.Integer)
+idUsuario = 1
+  And Verifico ID                                 # StepDefinitions.GetEmpleadoStepDefinition.verificoID()
+  And Verifico nombre                             # StepDefinitions.GetEmpleadoStepDefinition.verificoNombre()
+{
+    "data": {
+        "id": 1,
+        "email": "george.bluth@reqres.in",
+        "first_name": "George",
+        "last_name": "Bluth",
+        "avatar": "https://reqres.in/img/faces/1-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+
+@Apis
+Scenario Outline: obtener datos de un empleado    # src/test/resources/features/GetEmpleado.feature:13
+  Given deseo obtener datos de un empleado con id # StepDefinitions.GetEmpleadoStepDefinition.deseoObtenerDatosDeUnEmpleadoConId(io.cucumber.datatable.DataTable)
+    | Id | FirstName |
+    | 2  | Janet     |
+  Then valido el codigo de status 200             # StepDefinitions.GetEmpleadoStepDefinition.validoElCodigoDeStatus(java.lang.Integer)
+idUsuario = 2
+  And Verifico ID                                 # StepDefinitions.GetEmpleadoStepDefinition.verificoID()
+  And Verifico nombre                             # StepDefinitions.GetEmpleadoStepDefinition.verificoNombre()
+{
+    "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+obtener datos de un empleado(datos-de-empleado;obtener-datos-de-un-empleado)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+obtener datos de un empleado
+----------------------------------------------------------------------
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+obtener datos de un empleado
+----------------------------------------------------------------------
+]]></system-err>
+</testsuite>
